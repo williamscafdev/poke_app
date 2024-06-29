@@ -1,0 +1,21 @@
+flavors:
+  dev:
+    app:
+      name: "Poke App Dev"
+    android:
+      applicationId: "com.gc.poke_app_dev"
+      icons: "assets/img/app/app_icon.png"
+      flutter:
+        pages: false
+    ios:
+      bundleId: "com.gc.pokeAppDev"
+      icons: "assets/img/app/app_icon.png"
+  prod:
+    app:
+      name: "Poke App"
+    android:
+      applicationId: "com.gc.poke_app"
+      icons: "assets/img/app/app_icon.png"
+    ios:
+      bundleId: "com.gc.pokeApp"
+      icons: "assets/img/app/app_icon.png"

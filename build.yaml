@@ -1,0 +1,38 @@
+targets:
+  $default:
+    builders:      
+      auto_route_generator:auto_route_generator: # this for @RoutePage
+        options:
+          enable_cached_builds: true
+        generate_for:
+          - lib/presentation/**_screen.dart
+      auto_route_generator:auto_router_generator: # this for @AutoRouterConfig
+        options:
+          enable_cached_builds: true
+        generate_for:
+          - lib/core/router/app_routes.dart
+          - lib/core/router/router_provider.dart
+      json_serializable:
+        generate_for:
+          include:
+            - lib/src/models/**.dart
+            - lib/src/entities/**.dart
+            - lib/src/entities/request/**.dart
+            - lib/src/services/**.dart
+            - lib/src/core/services/**.dart
+            - lib/src/core/exceptions/**.dart
+            - lib/src/core/utils/**.dart
+      freezed:
+        generate_for:
+          include:
+      injectable_generator:injectable_config_builder:
+        options:
+          input_files:
+            - lib/src/repository/**.dart
+            - lib/src/core/utils/preferences/**.dart
+            - lib/src/services/**.dart
+            - lib/src/usescases/**.dart
+            - lib/src/enum/**.dart
+            - lib/src/generated/**.dart
+            - lib/src/injection.dart
+          output_files: ["lib/src/injectable.config.dart"]
