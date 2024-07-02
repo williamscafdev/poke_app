@@ -24,11 +24,11 @@ class GetPokemonsData {
         final pokemonsDataFilter = <PokemonData>[];
         for (final pokemon in pokemonsData) {
           final isFavorite = await sl<GetFavoriteById>().call(id: pokemon.id!);
-          pokemonsDataFilter.add(
-            pokemon.copyWith(
-              isFavorite: isFavorite,
-            ),
-          );
+          if (isFavorite) {
+            pokemonsDataFilter.add(pokemon.copyWith(isFavorite: true));
+          } else {
+            pokemonsDataFilter.add(pokemon.copyWith(isFavorite: false));
+          }
         }
         return Either.right(pokemonsDataFilter);
       },
