@@ -14,7 +14,7 @@ class TextStyleApp extends TextStyle {
   const TextStyleApp._({
     double fontSize = ResponsiveTextSize.s16,
     FontWeight fontWeight = FontWeight.normal,
-    Color color = Colors.black,
+    Color color = Colors.white,
   }) : super(
           fontFamily: font,
           fontStyle: FontStyle.normal,
@@ -61,6 +61,7 @@ class TextStyleApp extends TextStyle {
   static const body = TextStyleApp._(
     fontSize: ResponsiveTextSize.s14,
   );
+  static const bodyMid = TextStyleApp._();
   static const bodyBold = TextStyleApp._(
     fontSize: ResponsiveTextSize.s14,
     fontWeight: FontWeight.w700,

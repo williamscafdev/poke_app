@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:poke_app/core/core.dart';
 import 'package:poke_app/flavors.dart';
-import 'package:poke_app/pages/my_home_page.dart';
+
+final appRouter = AppRouter();
 
 class App extends StatelessWidget {
   const App({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: F.title,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: _flavorBanner(
-        child: MyHomePage(),
+      routerDelegate: appRouter.delegate(),
+      routeInformationParser: appRouter.defaultRouteParser(),
+      theme: AppThemes.darkTheme,
+      builder: (BuildContext context, Widget? child) => _flavorBanner(
+        child: child!,
       ),
     );
   }

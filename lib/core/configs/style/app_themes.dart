@@ -7,14 +7,14 @@ class AppThemes {
       useMaterial3: true,
       brightness: Brightness.dark,
       fontFamily: font,
-      primaryColor: AppColors.getMaterialColorFromColor(AppColors.grey),
-      scaffoldBackgroundColor: AppColors.grey,
+      primaryColor: AppColors.getMaterialColorFromColor(AppColors.black),
+      scaffoldBackgroundColor: AppColors.black,
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-        backgroundColor: AppColors.grey,
+        backgroundColor: AppColors.black,
       ),
       appBarTheme: const AppBarTheme(
         elevation: 0,
-        backgroundColor: AppColors.grey,
+        backgroundColor: AppColors.black,
       ),
     );
   }
@@ -23,9 +23,9 @@ class AppThemes {
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.light,
-      primaryColor: AppColors.getMaterialColorFromColor(AppColors.white),
+      primaryColor: AppColors.getMaterialColorFromColor(AppColors.black),
       colorScheme: const ColorScheme.light(
-        primary: AppColors.white,
+        primary: AppColors.black,
       ),
       appBarTheme: const AppBarTheme(
         elevation: 2,

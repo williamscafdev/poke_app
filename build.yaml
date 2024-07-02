@@ -25,6 +25,15 @@ targets:
       freezed:
         generate_for:
           include:
+            - lib/presentation/home/screen/vm/**.dart
+            - lib/src/models/**.dart
+            - lib/src/entities/**.dart
+            - lib/src/entities/request/**.dart
+            - lib/src/services/**.dart
+            - lib/core/services/**.dart
+            - lib/core/exceptions/**.dart
+            - lib/core/utils/**.dart
+            - lib/core/configs/exceptions/**.dart
       injectable_generator:injectable_config_builder:
         options:
           input_files:

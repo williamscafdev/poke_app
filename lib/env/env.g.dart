@@ -9,5 +9,5 @@ part of 'env.dart';
 // coverage:ignore-file
 // ignore_for_file: type=lint
 final class _Env {
-  static const String api = 'https://pokeapi.co/api/';
+  static const String api = 'https://pokeapi.co/api/v2/';
 }

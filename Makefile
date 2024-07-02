@@ -41,4 +41,4 @@ clear:
 	fvm dart run build_runner clean
 
 init:
-	fvm flutter clean && fvm flutter pub get packages && fvm flutter pub upgrade && fvm flutter pub run build_runner build --delete-conflicting-outputs
+	fvm flutter clean && fvm flutter pub get packages && fvm flutter pub upgrade && fvm dart run build_runner clean && fvm dart run build_runner build --delete-conflicting-outputs
