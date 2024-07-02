@@ -9,6 +9,7 @@ App Poke App is a Flutter application that uses the [PokeAPI](https://pokeapi.co
 - [MakeFile] (https://www.gnu.org/software/make/)
 - [Flutter] (https://flutter.dev/docs/get-started/install)
 - [FVM] (https://fvm.app/docs/getting_started/installation)
+- [Dart] (https://dart.dev/get-dart)
 
 ### Installation
 
@@ -16,11 +17,19 @@ App Poke App is a Flutter application that uses the [PokeAPI](https://pokeapi.co
    ```sh
    git clone
     ```
-2. Install the dependencies
+2. Use the FVM to install the Flutter version
+    ```sh
+    fvm install
+    ```
+3. Use the FVM to set the Flutter version
+    ```sh
+    fvm use 3.22.0
+    ```
+4. Install the dependencies
     ```sh
     make init
     ```
-3. Run the app
+5. Run the app
     ```sh
     Use the option in Visual Studio Code Run -> selected Development dev
     ```
